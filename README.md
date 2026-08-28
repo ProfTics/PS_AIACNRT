@@ -1,20 +1,41 @@
 # PS_AIACNRT
-En este repositoro se guardaran todos los avances de la Practica Supervisada(PS) de Agente inteligente que se desarrollara para la CRNT
+En este repositorio se guardaran todos los avances de la Práctica Supervisada(PS) del Agente inteligente que se desarrollara para la CRNT
+
 Título: “Agente de Inteligencia Artificial para la gestión de multas e infracciones en la CNRT”.
+
 DOCENTE SUPERVISOR: Prof. Matías Santillán Ahumada
+
 TUTOR INSTITUCIÓN/EMPRESA: Ing. Hadad Salomón, Rosana 
+
 La PS inicia el 15/06/2026 y termina el 21/08/2026
-Título y descripción: Pon el nombre de tu proyecto y explica en una o dos líneas qué hace y para qué sirve.
-Tecnologías: Menciona los lenguajes, librerías o herramientas principales que usaste.
+
+Título y descripción: “Agente de Inteligencia Artificial para la gestión de multas e infracciones en la CNRT”.
+
+Tecnologías: El Stack Tecnológico está conformado por:
+
+a) Make(Low-code)/Json
+b) APIs: Google Gemini, Google Vision
+c) Base de Datos: Airtable
+d) Frontend: Telegram
+
+Menciona los lenguajes, librerías o herramientas principales que usaste.
+
 Instalación: Detalla los pasos exactos para clonar el repositorio y descargar las dependencias necesarias.
+
 Uso: Muestra ejemplos de código o comandos para poner en marcha el proyecto.
+
 Contacto o Autor: Deja tu nombre o un medio para comunicarse contigo si alguien quiere colaborar
 
 EN DESARROLLO
 
 # [Nombre de tu Bot de Telegram]
 
-Este es un bot de Telegram automatizado utilizando la plataforma **Make** (Integromat). El bot se encarga de [ej. responder preguntas de clientes / agendar citas / enviar alertas automáticas].
+Este es un bot de Telegram automatizado utilizando la plataforma **Make** (Integromat). El bot se encarga realizar 4 tareas:
+1: Investigar con Gemini la Página Oficial de la CNRT: https://www.argentina.gob.ar/transporte/cnrt.
+2: Consultar el dataset de la Normativa en vigencia.
+3: Consultar por DNI/Patente infracciones.
+4: Subir multas mediante tecnología OCR.
+
 
 ## 🚀 Cómo Funciona el Flujo
 El escenario en Make sigue los siguientes pasos:
