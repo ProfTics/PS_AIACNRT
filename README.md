@@ -25,7 +25,8 @@ Contacto o Autor: andrecosentino17@gmail.com
 EN DESARROLLO
 
 # BoByBot:
-Este es un bot de Telegram automatizado utilizando la plataforma **Make** (Integromat). El bot se encarga realizar 4 tareas:
+Este es un bot de Telegram automatizado utilizando la plataforma **Make** (Integromat). 
+El bot se encarga realizar 4 tareas:
 1: Investigar con Gemini la Página Oficial de la CNRT: https://www.argentina.gob.ar/transporte/cnrt.
 2: Consultar el dataset de la Normativa en vigencia.
 3: Consultar por DNI/Patente infracciones.
@@ -47,7 +48,7 @@ Antes de replicar este escenario, necesitas:
 * APIs: Google Cloud Vision, Docuement AI
 * Token: Telegram, Google Studio AI(Gemini), Google CLoud Vision.
 * EL modulo dentro de Make de Document AI debes configurar:
-* Crear una cuenta en Airtable, recomiendo usar la misma de Gooogle Workspace.
+* Crear una cuenta en Airtable, recomiendo usar la misma de Google Workspace.
 
 ## ⚙️ Configuración Paso a Paso
 
