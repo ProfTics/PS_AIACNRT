@@ -5216,8 +5216,8 @@
                                                 "id": "{{57.id}}",
                                                 "record": {
                                                     "fldQftdcntWtTcDnQ": "Respondida",
-                                                    "fldBazZR2NIHfPsMf": "\r\n{{ifempty(57.`Resultado consulta`; \"\")}};\r\n  Inspector:\r\n  {{4.mensaje_usuario}}\r\n\r\n",
-                                                    "fldaOxoscmY8twvkc": "concat(\r\n  ifempty({{57.`Resultado consulta`}}; \"\");\r\n  \"\\n\\nAgente: \";\r\n  respuesta_gemini{{30.candidates[].content.parts[].text}}\r\n)",
+                                                    "fldBazZR2NIHfPsMf": "\r\n{{ifempty(57.`Detalle de Consulta`; \"\")}};\r\n\"\\n\\nInspector: \";\r\n  {{4.mensaje_usuario}}\r\n\r\n",
+                                                    "fldaOxoscmY8twvkc": "{{ifempty(57.`Resultado consulta`; \"\")}} \r\n  \"\\n\\nAgente: \";\r\n  {{30.candidates[].content.parts[].text}}",
                                                     "fldEeNKepcbBxhlxH": "{{now}}"
                                                 }
                                             },
@@ -5228,7 +5228,7 @@
                                                 },
                                                 "setupValidation": {
                                                     "version": 1,
-                                                    "configuration": "5124a8141d205479",
+                                                    "configuration": "b290ef857a6371b5",
                                                     "result": {
                                                         "valid": true,
                                                         "fields": []
@@ -5576,6 +5576,13 @@
                                             "a": "{{3.tarea_actual}}",
                                             "o": "text:equal",
                                             "b": "NINGUNA"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "a": "{{3.tarea_actual}}",
+                                            "o": "text:equal",
+                                            "b": "ESPERANDO_IDENTIFICADOR"
                                         }
                                     ]
                                 ]
@@ -8916,13 +8923,13 @@
                                                                 "conditions": []
                                                             },
                                                             "mapper": {
+                                                                "chatId": "{{4.telegram_chat_id}}",
                                                                 "text": "El identificador no tiene un formato válido.\r\n\r\n🪪🙎🏻♂️DNI:\r\n• 7 u 8 números.\r\n• Sin puntos ni espacios.\r\n\r\n🚘Patente:\r\n• Letras y números.\r\n• Sin espacios ni guiones.\r\n\r\nEjemplos:\r\n30123456\r\nAB123CD\r\n\r\nIntenta nuevamente o escribe /menu.",
-                                                                "chatId": "{{3.id}}",
-                                                                "parseMode": "",
-                                                                "replyMarkup": "",
                                                                 "messageThreadId": "",
+                                                                "parseMode": "",
                                                                 "replyToMessageId": "",
-                                                                "replyMarkupAssembleType": "reply_markup_enter"
+                                                                "replyMarkupAssembleType": "reply_markup_enter",
+                                                                "replyMarkup": ""
                                                             },
                                                             "metadata": {
                                                                 "designer": {
@@ -8930,14 +8937,23 @@
                                                                     "y": 3300
                                                                 },
                                                                 "setupValidation": {
+                                                                    "version": 1,
+                                                                    "configuration": "5a5196daf5dd8c0d",
                                                                     "result": {
                                                                         "valid": true,
                                                                         "fields": []
-                                                                    },
-                                                                    "version": 1,
-                                                                    "configuration": "7c237ec5f873b025"
+                                                                    }
                                                                 },
                                                                 "restore": {
+                                                                    "parameters": {
+                                                                        "__IMTCONN__": {
+                                                                            "label": "Token BOBYBOT",
+                                                                            "data": {
+                                                                                "scoped": "true",
+                                                                                "connection": "telegram"
+                                                                            }
+                                                                        }
+                                                                    },
                                                                     "expect": {
                                                                         "parseMode": {
                                                                             "label": "Empty"
@@ -8947,15 +8963,6 @@
                                                                         },
                                                                         "replyMarkupAssembleType": {
                                                                             "label": "Enter the Reply Markup"
-                                                                        }
-                                                                    },
-                                                                    "parameters": {
-                                                                        "__IMTCONN__": {
-                                                                            "data": {
-                                                                                "scoped": "true",
-                                                                                "connection": "telegram"
-                                                                            },
-                                                                            "label": "Token BOBYBOT"
                                                                         }
                                                                     }
                                                                 },
