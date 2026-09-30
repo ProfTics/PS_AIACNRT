@@ -40,15 +40,25 @@ El escenario en Make sigue los siguientes pasos:
 4. **Enfoque Final:** [Ej. Envía una confirmación al usuario en Telegram]
 
 ## 🛠️ Requisitos Previos
-Antes de replicar este escenario, necesitas:
-* Una cuenta activa en [Make](https://make.com).
-* Un token de bot de Telegram (búscalo creando tu bot con [@BotFather](https://t.me)).
-* Una cuenta en google Workspace.
-* Con la misma cuenta en google Workspace, generar un cuenta en Google Cloud para obtener las APIs.
-* APIs: Google Cloud Vision, Docuement AI
-* Token: Telegram, Google Studio AI(Gemini), Google CLoud Vision.
-* EL modulo dentro de Make de Document AI debes configurar:
-* Crear una cuenta en Airtable, recomiendo usar la misma de Google Workspace.
+Antes de instalar o replicar el proyecto se requiere:
+
+Git instalado.
+Una cuenta activa en Make.
+Una cuenta de Telegram.
+Un bot creado mediante BotFather.
+Una cuenta de Google.
+Un proyecto creado en Google Cloud.
+Acceso a Google AI Studio para utilizar Gemini.
+Una cuenta activa en Airtable.
+El archivo blueprint.json exportado desde Make.
+Acceso a las APIs utilizadas por el proyecto.
+
+APIs requeridas
+Google Gemini API.
+Google Cloud Vision API.
+Document AI API.
+Telegram Bot API.
+Airtable API, en caso de utilizar conexiones mediante API.
 
 ## ⚙️ Configuración Paso a Paso
 
