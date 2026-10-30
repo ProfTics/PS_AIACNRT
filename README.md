@@ -7,7 +7,7 @@ DOCENTE SUPERVISOR: Prof. Matías Santillán Ahumada
 
 TUTOR INSTITUCIÓN/EMPRESA: Ing. Hadad Salomón, Rosana 
 
-La PS inicia el 15/06/2026 y termina el 21/08/2026
+La PS inicia el 15/06/2026 y termina el 21/08/2026. La PS terminó 25/10/2026
 
 Tecnologías (El Stack Tecnológico está conformado por):
 
@@ -16,13 +16,8 @@ b) APIs: Google Gemini, Google Vision, Document AI
 c) Base de Datos: Airtable
 d) Frontend: Telegram
 
-Instalación: Detalla los pasos exactos para clonar el repositorio y descargar las dependencias necesarias.
+Instalación: Detalle de los pasos exactos para clonar el repositorio y descargar las dependencias necesarias.
 
-Uso: Muestra ejemplos de código o comandos para poner en marcha el proyecto.
-
-Contacto o Autor: andrecosentino17@gmail.com
-
-EN DESARROLLO
 
 # BoByBot:
 Este es un bot de Telegram automatizado utilizando la plataforma **Make** (Integromat). 
@@ -42,23 +37,21 @@ El escenario en Make sigue los siguientes pasos:
 ## 🛠️ Requisitos Previos
 Antes de instalar o replicar el proyecto se requiere:
 
-Git instalado.
-Una cuenta activa en Make.
-Una cuenta de Telegram.
-Un bot creado mediante BotFather.
-Una cuenta de Google.
-Un proyecto creado en Google Cloud.
-Acceso a Google AI Studio para utilizar Gemini.
-Una cuenta activa en Airtable.
-El archivo blueprint.json exportado desde Make.
-Acceso a las APIs utilizadas por el proyecto.
-
-APIs requeridas
-Google Gemini API.
-Google Cloud Vision API.
-Document AI API.
-Telegram Bot API.
-Airtable API, en caso de utilizar conexiones mediante API.
+- Git instalado.
+- Una cuenta activa en Make.
+- Una cuenta de Telegram.
+- Un bot creado mediante BotFather.
+- Una cuenta de Google.
+- Un proyecto creado en Google Cloud.
+- Acceso a Google AI Studio para utilizar Gemini.
+- Una cuenta activa en Airtable.
+- El archivo blueprint.json exportado desde Make.
+- Acceso a las APIs utilizadas por el proyecto:
+  . APIs requeridas
+  . Google Gemini API.
+  . Google Cloud Vision API.
+  . Telegram Bot API.
+   . Airtable API, en caso de utilizar conexiones mediante API.
 
 ## ⚙️ Configuración Paso a Paso
 
@@ -69,7 +62,12 @@ Si compartes el archivo JSON de Make:
 
 ### 2. Configurar las Conexiones
 * **Módulo de Telegram:** Haz clic en el módulo, añade una nueva conexión y pega tu *Bot Token*. Asegúrate de activar el Webhook.
-* **[Módulo 2, ej. Airtable/Gmail]:** Inicia sesión en la plataforma correspondiente para otorgar los permisos de acceso.
+* **Módulo Airtable:** Inicia sesión en la plataforma correspondiente para otorgar los permisos de acceso.
+* **Módulo Modelo LLM(Gemini):** Realizar la conexión con el token otorgado en Google AI Studio.
+* **Módulo OCR:** REalizar la conexión con el token de Google Cloud Vision API
+  HTTP.
+JSON.
+
 
 ### 4. Configurar Telegram en Make
 Abre el módulo de Telegram dentro del escenario.
@@ -101,29 +99,7 @@ Selecciona la base y la tabla correspondiente.
 Actualiza los mapeos de campos.
 Realiza una prueba manual de lectura y escritura.
 
-
-### 6. Configurar Google Cloud Vision
-Accede a Google Cloud Console.
-Crea o selecciona un proyecto.
-Habilita la API de Google Cloud Vision.
-Configura las credenciales necesarias.
-Restringe las credenciales según el uso previsto.
-Configura alertas y límites de consumo.
-Añade la conexión correspondiente dentro de Make.
-
-
-### 7. Configurar Document AI
-Accede al proyecto de Google Cloud.
-Habilita Document AI API.
-Ingresa a la sección de Document AI.
-Crea o selecciona un procesador.
-Guarda los siguientes datos:
-Project ID
-Location
-Processor ID
-Processor Version
-
-### 8. Configurar Gemini
+### 6. Configurar Gemini
 Accede a Google AI Studio.
 Genera una clave de API.
 Guarda la clave en un lugar seguro.
@@ -133,18 +109,18 @@ Revisa el modelo seleccionado.
 Verifica los prompts utilizados por cada ruta.
 Ejecuta una consulta de prueba.
 
+### 7. Configurar Google Cloud Vision
+Accede a Google Cloud Console.
+Crea o selecciona un proyecto.
+Habilita la API de Google Cloud Vision.
+Configura las credenciales necesarias.
+Restringe las credenciales según el uso previsto.
+Configura alertas y límites de consumo.
+Añade la conexión correspondiente dentro de Make.
 
-### 9. Revisar las conexiones
 
-Después de importar el blueprint, verifica uno por uno los módulos de:
 
-Telegram.
-Airtable.
-Gemini.
-Google Cloud Vision.
-Document AI.
-HTTP.
-JSON.
+### 8. Revisar las conexiones5t4g7y
 
 También debes comprobar:
 
@@ -256,6 +232,7 @@ Verifica Project ID, Location y Processor ID.
 Confirma que el procesador esté habilitado.
 Revisa los permisos de la cuenta utilizada.
 Comprueba el tipo y tamaño del documento.
+
 📚 Documentación oficial
 Sitio oficial de la CNRT
 Documentación de Make
@@ -265,6 +242,7 @@ Documentación de Cloud Vision
 Documentación de Document AI
 https://airtable.com
 Google AI Studio
+
 ⚠️ Limitaciones
 El sistema corresponde a un prototipo académico.
 Requiere conexión a Internet.
