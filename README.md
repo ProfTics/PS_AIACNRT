@@ -254,7 +254,7 @@ El prototipo no reemplaza el criterio de los agentes responsables.
 No debe utilizarse como única fuente para adoptar decisiones administrativas o legales.
 
 ## 👤 Autor
-* **Tu Nombre** - [@tu_usuario_telegram](https://t.me)👤 Autora y contacto
+* Andrea Victoria Cosentino - [@tu_usuario_telegram](https://t.me)👤 Autora y contacto
 
 Andrea Victoria Cosentino
 
