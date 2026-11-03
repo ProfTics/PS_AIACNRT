@@ -120,7 +120,7 @@ Añade la conexión correspondiente dentro de Make.
 
 
 
-### 8. Revisar las conexiones5t4g7y
+### 8. Revisar las conexiones
 
 También debes comprobar:
 
@@ -132,7 +132,7 @@ Webhooks.
 Rutas del router.
 Mapeos entre módulos.
 
-### 10. Activar el escenario
+### 9. Activar el escenario
 Guarda todos los cambios.
 Selecciona Run once.
 Envía un mensaje de prueba al bot.
@@ -254,7 +254,7 @@ El prototipo no reemplaza el criterio de los agentes responsables.
 No debe utilizarse como única fuente para adoptar decisiones administrativas o legales.
 
 ## 👤 Autor
-* Andrea Victoria Cosentino - [@tu_usuario_telegram](https://t.me)👤 Autora y contacto
+* Andrea Victoria Cosentino -(https://t.me/Andrea Victoria Cosentino)👤 Autora y contacto
 
 Andrea Victoria Cosentino
 
